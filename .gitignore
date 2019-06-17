@@ -24,3 +24,11 @@ hs_err_pid*
 
 
 .DS_Store
+
+target
+
+out
+
+.idea
+*.iml
+
