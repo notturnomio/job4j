@@ -1,4 +1,4 @@
-package loop;
+package ru.job4j.loop;
 
 /**
  * The program that calculates a factorial with for loop.

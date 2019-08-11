@@ -1,4 +1,4 @@
-package loop;
+package ru.job4j.loop;
 
 public class Fitness {
     public int calc(int john, int mike) {

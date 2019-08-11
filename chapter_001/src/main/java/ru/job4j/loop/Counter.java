@@ -1,4 +1,4 @@
-package loop;
+package ru.job4j.loop;
 
 /**
  * The program calculates a sum of even numbers in a loop.

@@ -1,4 +1,4 @@
-package loop;
+package ru.job4j.loop;
 
 /**
  * Mortage program calculates number of years needed to pay a credit.

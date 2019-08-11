@@ -1,4 +1,4 @@
-package loop;
+package ru.job4j.loop;
 
 /**
  * The test to calculate a sum of even numbers in a loop.
@@ -9,6 +9,7 @@ package loop;
  */
 
 import org.junit.Test;
+import ru.job4j.loop.Counter;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;

@@ -1,4 +1,4 @@
-package loop;
+package ru.job4j.loop;
 
 /**
  * The program counts the number of prime numbers from 1 to x.
