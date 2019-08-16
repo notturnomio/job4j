@@ -17,12 +17,12 @@ public class EndsWithTest {
     }
 
     /**
-     * Testing if word ends with le.
+     * Testing if word ends with la.
      */
     @Test
     public void whenNotEndsWithPrefixThenTrue() {
         EndsWith word = new EndsWith();
-        boolean result = word.endsWith("Hello", "le");
+        boolean result = word.endsWith("Hello", "la");
         assertThat(result, is(true));
     }
 }
