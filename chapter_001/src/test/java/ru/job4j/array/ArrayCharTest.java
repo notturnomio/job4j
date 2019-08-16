@@ -22,7 +22,7 @@ public class ArrayCharTest {
     @Test
     public void whenNotStartWithPrefixThenFalse() {
         ArrayChar word = new ArrayChar();
-        boolean result = word.StartsWith("Hello", "Hil");
+        boolean result = word.StartsWith("Hello", "Hol");
         assertThat(result, is(false));
     }
 }
