@@ -16,12 +16,12 @@ public class EndsWith {
      * @return result.
      */
     public boolean endsWith(String word, String post) {
-        boolean result = false;
+        boolean result = true;
         char[] pst = post.toCharArray();
         char[] wrd = word.toCharArray();
-        for (int i = post.length() - 2; i < post.length(); i++) {
-            if (wrd[i] != pst[i]) {
-                result = true;
+        for (int i = 0; i < pst.length; i++) {
+            if (wrd[wrd.length - i - 1] != pst[pst.length - i - 1]) {
+                result = false;
                 break;
             }
         }
