@@ -46,5 +46,30 @@ public class FindLoop {
         }
         return rst;
     }
+
+    /**
+     * Method method sorts the elements of an array in ascending order.
+     *
+     * @param data array size.
+     * @return sorted array.
+     */
+    public int[] sort(int[] data) {
+        for (int i = 0; i != data.length; i++) {
+            int min = data[i];
+            int min_index = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[j] < min) {
+                    min = data[j];
+                    min_index = j;
+                }
+            }
+            if (i != min_index) {
+                int temp = data[i];
+                data[i] = data[min_index];
+                data[min_index] = temp;
+            }
+        }
+        return data;
+    }
 }
 
