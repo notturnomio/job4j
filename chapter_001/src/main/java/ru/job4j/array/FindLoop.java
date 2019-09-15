@@ -56,17 +56,17 @@ public class FindLoop {
     public int[] sort(int[] data) {
         for (int i = 0; i != data.length; i++) {
             int min = data[i];
-            int min_index = i;
+            int minIndex = i;
             for (int j = i + 1; j < data.length; j++) {
                 if (data[j] < min) {
                     min = data[j];
-                    min_index = j;
+                    minIndex = j;
                 }
             }
-            if (i != min_index) {
+            if (i != minIndex) {
                 int temp = data[i];
-                data[i] = data[min_index];
-                data[min_index] = temp;
+                data[i] = data[minIndex];
+                data[minIndex] = temp;
             }
         }
         return data;
