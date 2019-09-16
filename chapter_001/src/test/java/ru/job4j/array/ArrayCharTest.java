@@ -12,7 +12,7 @@ public class ArrayCharTest {
     @Test
     public void whenStartWithPrefixThenTrue() {
         ArrayChar word = new ArrayChar();
-        boolean result = word.StartsWith("Hello", "Hel");
+        boolean result = word.startsWith("Hello", "Hel");
         assertThat(result, is(true));
     }
 
@@ -22,7 +22,7 @@ public class ArrayCharTest {
     @Test
     public void whenNotStartWithPrefixThenFalse() {
         ArrayChar word = new ArrayChar();
-        boolean result = word.StartsWith("Hello", "Hol");
+        boolean result = word.startsWith("Hello", "Hol");
         assertThat(result, is(false));
     }
 }

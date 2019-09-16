@@ -15,7 +15,7 @@ public class ArrayChar {
      * @param prefix first letters.
      * @return result.
      */
-    public boolean StartsWith(String word, String prefix) {
+    public boolean startsWith(String word, String prefix) {
         boolean result = true;
         char[] pref = prefix.toCharArray();
         char[] wrd = word.toCharArray();
