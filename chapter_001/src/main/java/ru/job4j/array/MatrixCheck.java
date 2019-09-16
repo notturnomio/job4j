@@ -20,10 +20,22 @@ public class MatrixCheck {
             for (int cell = 0; cell < board.length; cell++) {
                 char sign = board[row][cell];
                 System.out.print(sign);
-                for (int i = 0; i < board.length; i++) {
-                    if (board[i][i] == 'X') {
-                        result = true;
-                        break;
+                if (board[row][0] == 'X') {
+                    result = true;
+                    for (int i = 0; i < board.length; i++) {
+                        if (board[row][i] != 'X') {
+                            result = false;
+                            break;
+                        }
+                    }
+                }
+                if (board[0][cell] == 'X') {
+                    result = true;
+                    for (int i = 0; i < board.length; i++) {
+                        if (board[i][cell] != 'X') {
+                            result = false;
+                            break;
+                        }
                     }
                 }
             }
@@ -31,6 +43,7 @@ public class MatrixCheck {
         }
         return result;
     }
+
 
     /**
      * Main method prints out various layouts of the game.
