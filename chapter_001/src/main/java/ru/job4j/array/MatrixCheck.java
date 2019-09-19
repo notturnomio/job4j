@@ -17,29 +17,22 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
-            for (int cell = 0; cell < board.length; cell++) {
-                char sign = board[row][cell];
-                System.out.print(sign);
-                if (board[row][0] == 'X') {
-                    result = true;
-                    for (int i = 0; i < board.length; i++) {
-                        if (board[row][i] != 'X') {
-                            result = false;
-                            break;
-                        }
+            int count = 0;
+            int count2 = 0;
+            if (board[row][row] == 'X') {
+                for (int i = 0; i < board.length; i++) {
+                    if (board[row][i] == 'X') {
+                        count++;
+                    }
+                    if (board[i][row] == 'X') {
+                        count2++;
                     }
                 }
-                if (board[0][cell] == 'X') {
+                if (board.length == count || board.length == count2) {
                     result = true;
-                    for (int i = 0; i < board.length; i++) {
-                        if (board[i][cell] != 'X') {
-                            result = false;
-                            break;
-                        }
-                    }
                 }
+                break;
             }
-            System.out.println();
         }
         return result;
     }
