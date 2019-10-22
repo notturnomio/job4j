@@ -37,7 +37,6 @@ public class MatrixCheck {
         return result;
     }
 
-
     /**
      * Main method prints out various layouts of the game.
      *

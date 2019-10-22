@@ -40,6 +40,4 @@ public class DummyBotTest {
                 is("It baffles me. Ask another question.")
         );
     }
-
-
 }

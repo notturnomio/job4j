@@ -1,5 +1,10 @@
 package ru.job4j.condition;
 
+import org.junit.Test;
+
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+
 /**
  * The test to find largest of three numbers.
  *
@@ -7,11 +12,6 @@ package ru.job4j.condition;
  * @version $Id$
  * @since 0.1
  */
-
-import org.junit.Test;
-
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
 
 public class MultiMaxTest {
     @Test

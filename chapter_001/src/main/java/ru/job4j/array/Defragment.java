@@ -15,7 +15,6 @@ public class Defragment {
      * @return swapped array.
      */
     public static String[] compress(String[] array) {
-
         for (int i = 0; i < array.length; i++) {
             String cell = array[i];
             if (cell == null) {

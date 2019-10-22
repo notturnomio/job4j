@@ -32,7 +32,6 @@ public class CarUsage {
         int distance = 10;
         bmw.drive(distance);
         bmw.gasInfo();
-
         System.out.println();
         Car audi = new Car();
         if (!audi.canDrive()) {

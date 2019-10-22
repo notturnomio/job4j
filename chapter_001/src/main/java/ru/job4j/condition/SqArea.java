@@ -19,6 +19,5 @@ public class SqArea {
         int height = (p * k) / (2 * (1 + k));
         int width = height / k;
         return height * width;
-
     }
 }
