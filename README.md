@@ -7,3 +7,5 @@ You can find here some projects that I implemented on this course.
 Объединение зафиксированных изменений.
 
 
+
+В курсе производилась работа с ветками git.
