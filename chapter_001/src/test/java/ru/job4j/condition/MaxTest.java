@@ -9,14 +9,14 @@ public class MaxTest {
     @Test
     public void whenMax1to2Then2() {
         Max max = new Max();
-        int result = max.max(1, 2);
+        int result = max.max(2, 1);
         assertThat(result, is(2));
     }
 
     @Test
     public void whenMax3to2Then3() {
         Max max = new Max();
-        int result = max.max(3, 2, 1);
+        int result = max.max(2, 3, 1);
         assertThat(result, is(3));
     }
 
