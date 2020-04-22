@@ -23,4 +23,15 @@ public class PointTest {
         double result = a.distance(b);
         assertThat(result, is(10D));
     }
+
+    /**
+     * Test distance between two points in 3d.
+     */
+    @Test
+    public void when3DimensionalDistance() {
+        Point c = new Point(0, 2, 4);
+        Point d = new Point(2, 12, 5);
+        double result = c.distance3d(d);
+        assertThat(result, is(10.246950765959598));
+    }
 }
