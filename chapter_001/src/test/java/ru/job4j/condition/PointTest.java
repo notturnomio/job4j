@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Test.
@@ -32,6 +33,6 @@ public class PointTest {
         Point c = new Point(0, 2, 4);
         Point d = new Point(2, 12, 5);
         double result = c.distance3d(d);
-        assertThat(result, is(10.246950765959598));
+        assertEquals(result, 10, 0.3);
     }
 }
