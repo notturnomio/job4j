@@ -60,4 +60,28 @@ public class Tracker {
         }
         return result;
     }
+
+    private int indexOf(String id) {
+        int result = -1;
+        for (int index = 0; index < position; index++) {
+            if (items[index].getId().equals(id)) {
+                result = index;
+                break;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Метод замены заявки в хранилище (id заявки сохраняется)
+     *
+     * @param id   заявки, которую нужно заменить
+     * @param item новая заявка
+     */
+    public void replace(String id, Item item) {
+        int index = indexOf(id);
+        item.setId(id);
+        this.items[index] = item;
+    }
 }
+
