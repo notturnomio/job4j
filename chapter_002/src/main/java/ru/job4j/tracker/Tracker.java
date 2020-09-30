@@ -78,12 +78,10 @@ public class Tracker {
      * @param id   заявки, которую нужно заменить
      * @param item новая заявка
      */
-    public void replace(String id, Item item) {
+    public boolean replace(String id, Item item) {
         int index = indexOf(id);
-        if (index >= 0) {
-            item.setId(id);
-            this.items[index] = item;
-        }
+        item.setId(id);
+        this.items[index] = item;
+        return true;
     }
 }
-
